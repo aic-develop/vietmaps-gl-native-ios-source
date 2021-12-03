@@ -1,0 +1,3 @@
+dependencies: \
+  /Users/phu/mapbox-gl-native-ios/platform/ios/vendor/mapbox-events-ios/MapboxMobileEvents/Categories/NSString+MMEVersions.m \
+  /Users/phu/mapbox-gl-native-ios/platform/ios/vendor/mapbox-events-ios/MapboxMobileEvents/Categories/NSString+MMEVersions.h

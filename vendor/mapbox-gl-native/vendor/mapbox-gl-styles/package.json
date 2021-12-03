@@ -1,0 +1,20 @@
+{
+  "name": "mapbox-gl-styles",
+  "version": "2.0.2",
+  "description": "mapbox gl example styles",
+  "main": "index.js",
+  "bin": {},
+  "scripts": {
+    "test": "tape test/test.js",
+    "migrate": "./migrate.sh"
+  },
+  "devDependencies": {
+    "maki": "^2.0.5",
+    "mapbox-gl-style-spec": "^8.1.0",
+    "tape": "^4.2.0"
+  },
+  "dependencies": {
+    "glob": "^5.0.14"
+  },
+  "license": "BSD-3-Clause"
+}

@@ -1,0 +1,5 @@
+dependencies: \
+  /Users/phu/mapbox-gl-native-ios/platform/ios/vendor/mapbox-events-ios/MapboxMobileEvents/MMEEventLogReportViewController.m \
+  /Users/phu/mapbox-gl-native-ios/platform/ios/vendor/mapbox-events-ios/MapboxMobileEvents/MMEEventLogReportViewController.h \
+  /Users/phu/mapbox-gl-native-ios/platform/ios/vendor/mapbox-events-ios/MapboxMobileEvents/MMEConstants.h \
+  /Users/phu/mapbox-gl-native-ios/platform/ios/vendor/mapbox-events-ios/MapboxMobileEvents/MMETypes.h

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>56071F31-230F-4CED-B97F-D6619BA4B664</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>56071F31-230F-4CED-B97F-D6619BA4B664.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MapboxMobileEvents project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MapboxMobileEvents (All Targets)</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Cleaning project MapboxMobileEvents with scheme MapboxMobileEvents (All Targets) and configuration Release</string>
+			<key>timeStartedRecording</key>
+			<real>611286208.53109002</real>
+			<key>timeStoppedRecording</key>
+			<real>611286208.73974705</real>
+			<key>title</key>
+			<string>Cleaning project MapboxMobileEvents with scheme MapboxMobileEvents (All Targets) and configuration Release</string>
+			<key>uniqueIdentifier</key>
+			<string>56071F31-230F-4CED-B97F-D6619BA4B664</string>
+		</dict>
+		<key>BABEBC86-6A39-4534-9971-60DE67E06FF0</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BABEBC86-6A39-4534-9971-60DE67E06FF0.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MapboxMobileEvents project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MapboxMobileEvents (All Targets)</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Cleaning project MapboxMobileEvents with scheme MapboxMobileEvents (All Targets) and configuration Release</string>
+			<key>timeStartedRecording</key>
+			<real>611286228.78676105</real>
+			<key>timeStoppedRecording</key>
+			<real>611286229.03644001</real>
+			<key>title</key>
+			<string>Cleaning project MapboxMobileEvents with scheme MapboxMobileEvents (All Targets) and configuration Release</string>
+			<key>uniqueIdentifier</key>
+			<string>BABEBC86-6A39-4534-9971-60DE67E06FF0</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
