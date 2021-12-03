@@ -60,13 +60,13 @@ fi
 step "Recording library version…"
 VERSION="${OUTPUT}"/version.txt
 echo -n "https://github.com/mapbox/mapbox-gl-native-ios/commit/" > ${VERSION}
-HASH=`git log | head -1 | awk '{ print $2 }' | cut -c 1-10` && true
+HASH="aefg"
 echo -n "mapbox-gl-native-ios "
 echo ${HASH}
 echo ${HASH} >> ${VERSION}
 
-PROJ_VERSION=$(git rev-list --count HEAD)
-SEM_VERSION=$( git describe --tags --match=ios-v*.*.* --abbrev=0 | sed 's/^ios-v//' )
+PROJ_VERSION="1.0.1"
+SEM_VERSION="1.0.1"
 SHORT_VERSION=${SEM_VERSION%-*}
 
 step "Building targets (build ${PROJ_VERSION}, version ${SEM_VERSION})"

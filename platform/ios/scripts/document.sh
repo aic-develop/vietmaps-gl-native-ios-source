@@ -15,9 +15,9 @@ THEME=${JAZZY_THEME:-$DEFAULT_THEME}
 CUSTOM_HEAD=${JAZZY_CUSTOM_HEAD:-''}
 OUTPUT=${OUTPUT:-documentation}
 
-BRANCH=$( git describe --tags --match=ios-v*.*.* --abbrev=0 )
-SHORT_VERSION=$( echo ${BRANCH} | sed 's/^ios-v//' )
-RELEASE_VERSION=$( echo ${SHORT_VERSION} | sed -e 's/^ios-v//' -e 's/-.*//' )
+BRANCH="main"
+SHORT_VERSION="1.0.1"
+RELEASE_VERSION="1.0.1"
 
 rm -rf /tmp/mbgl
 mkdir -p /tmp/mbgl/

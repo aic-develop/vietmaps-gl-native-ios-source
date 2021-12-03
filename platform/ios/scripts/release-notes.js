@@ -21,19 +21,10 @@ switch(process.argv[2]) {
 /*
   Find current and immediately previous releases by parsing git tags.
 */
-let currentVersion = execSync('git describe --tags --match=ios-v*.*.* --abbrev=0')
-    .toString()
-    .trim()
-    .replace('ios-v', '');
+let currentVersion = '1.0.1';
 
-let gitTags = execSync('git tag --list ios-v*.*.*')
-    .toString()
-    .split('\n')
-    .map(function (tag) {
-        tag = tag.replace('ios-v', '').trim();
-        return semver.clean(tag);
-    });
-let previousVersion = semver.maxSatisfying(gitTags, "<" + currentVersion);
+let gitTags = '1.0.1';
+let previousVersion = '1.0.0';
 
 /*
   Parse the raw changelog text and split it into individual releases.
