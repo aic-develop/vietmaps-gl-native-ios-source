@@ -28,7 +28,9 @@ NSString * const MGLMapboxAccountTypeKey = @"MGLMapboxAccountType";
 
 + (void)load {
     // Read the initial configuration from Info.plist.
+    // Doc thong tin MGLVietMapsAccessToken trong file Info.plist
     NSString *accessToken = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"MGLVietMapsAccessToken"];
+    // --------------
     if (accessToken.length) {
         self.accessToken = accessToken;
     }
@@ -38,7 +40,9 @@ NSString * const MGLMapboxAccountTypeKey = @"MGLMapboxAccountType";
     if (apiBaseURL.length && [NSURL URLWithString:apiBaseURL]) {
         [self setAPIBaseURL:[NSURL URLWithString:apiBaseURL]];
     }
+    // Chuyen server mapbox sang vietmaps
     [self setAPIBaseURL:[NSURL URLWithString:@"https://tiles.vietmaps.vn"]];
+    // --------------
 }
 
 + (instancetype)sharedManager {

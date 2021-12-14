@@ -10,9 +10,10 @@
 
 namespace {
 
+// Doi protocol mapbox => vietmap
 const char* protocol = "vietmap://";
 const std::size_t protocolLength = 10;
-
+//----------------
 } // namespace
 
 namespace mbgl {
@@ -39,7 +40,9 @@ std::string normalizeSourceURL(const std::string& baseURL,
     }
 
     const URL url(str);
+  // Sua endpoint
     const auto tpl = baseURL + "/{domain}?access_token=" + accessToken + "&secure";
+  //-------------
     return transformURL(tpl, str, url);
 }
 
@@ -55,8 +58,9 @@ std::string normalizeStyleURL(const std::string& baseURL,
         Log::Error(Event::ParseStyle, "Invalid style URL");
         return str;
     }
-
+  // Sua endpoint
     const auto tpl = baseURL + "/styles{path}?access_token=" + accessToken;
+  // --------------
     return transformURL(tpl, str, url);
 }
 
@@ -68,13 +72,16 @@ std::string normalizeSpriteURL(const std::string& baseURL,
     }
 
     const URL url(str);
+  // Tat doan code nay de support vietmaps URL
     // if (!equals(str, url.domain, "sprites")) {
     //     Log::Error(Event::ParseStyle, "Invalid sprite URL");
     //     return str;
     // }
-
+  // -----------------
+  // Sua endpoint
     const auto tpl =
         baseURL + "/styles{directory}{filename}/sprite{extension}?access_token=" + accessToken;
+  // -----------------
     return transformURL(tpl, str, url);
 }
 
@@ -91,7 +98,9 @@ std::string normalizeGlyphsURL(const std::string& baseURL,
         return str;
     }
 
+  // Sua endpoint
     const auto tpl = baseURL + "/fonts{path}?access_token=" + accessToken;
+  // -------------
     return transformURL(tpl, str, url);
 }
 
@@ -103,6 +112,7 @@ std::string normalizeTileURL(const std::string& baseURL,
     }
 
     const URL url(str);
+  // Tat doan code nay de support vietmaps url
     // if (!equals(str, url.domain, "tiles")) {
     //     Log::Error(Event::ParseStyle, "Invalid tile URL");
     //     return str;
@@ -111,8 +121,11 @@ std::string normalizeTileURL(const std::string& baseURL,
     //Log::platformRecord(EventSeverity::Error, "normalize tile URL " + str);
     //if (str.rfind("vietmap://v", 0) == 0) {
     //}
+  // ----------------
+  // Doi endpoint
     const auto tpl = baseURL + "/v1{path}?access_token=" + accessToken;
     const auto urlStr = transformURL(tpl, str, url);
+  //------------------
     //Log::platformRecord(EventSeverity::Error, "final url " + urlStr);
     return urlStr;
 }

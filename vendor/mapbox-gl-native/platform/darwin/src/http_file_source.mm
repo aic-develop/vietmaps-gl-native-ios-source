@@ -251,7 +251,7 @@ std::unique_ptr<AsyncRequest> HTTPFileSource::request(const Resource& resource, 
         }
 
         [req addValue:impl->userAgent forHTTPHeaderField:@"User-Agent"];
-
+        // Sua de them access_token cua vietmap vao
         NSURLComponents *urlComponents = [[NSURLComponents alloc] initWithString:url.absoluteString];
         for (NSURLQueryItem *queryItem in urlComponents.queryItems) {
             if ([queryItem.name isEqualToString:@"access_token"]) {
@@ -260,7 +260,7 @@ std::unique_ptr<AsyncRequest> HTTPFileSource::request(const Resource& resource, 
                 break;
             }
         }
-        
+        // ---------------------------
         const bool isTile = resource.kind == mbgl::Resource::Kind::Tile;
 
         if (isTile) {

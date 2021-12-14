@@ -104,7 +104,9 @@ const MGLExceptionName MGLRedundantSourceIdentifierException = @"MGLRedundantSou
     + (NSURL *)name##StyleURL##WithVersion:(NSInteger)version { \
         return [NSURL URLWithString:@"vietmap://styles/default/style.json"]; \
     }
-
+// Chuyen doi style mapbox => vietmaps
+// [NSURL URLWithString:@"vietmap://styles/default/style.json"];
+//------------
 MGL_DEFINE_STYLE(streets, streets)
 MGL_DEFINE_STYLE(outdoors, outdoors)
 MGL_DEFINE_STYLE(light, light)
